@@ -16,9 +16,6 @@
 
 3. install plugin `ESLint` and `Prettier` in Visutal studio code
 
-4. set prettier option
-   (File > Preferences > Settings > Set Prettier -Code formatters of `Default Formatter`)
-
 ## Running Locally
 
 ### Run Dev
