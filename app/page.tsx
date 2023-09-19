@@ -9,7 +9,7 @@ export default function Page() {
       <Link href={'/child1'}>Go To Child1</Link>
       <br />
       <div>
-      <h1 className={styles.pageTitle}>This is a Page</h1>
+        <h1 className={styles.pageTitle}>This is a Page</h1>
       </div>
       <ServerComponent />
     </div>
