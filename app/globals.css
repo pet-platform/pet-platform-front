@@ -1,9 +1,2 @@
 /** reset CSS 적용 */
 @import 'reset.css';
-
-html,
-body {
-  margin: 8px;
-  height: 100%;
-  min-height: 100%;
-}
