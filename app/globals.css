@@ -1,2 +1,9 @@
 /** reset CSS 적용 */
 @import 'reset.css';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
