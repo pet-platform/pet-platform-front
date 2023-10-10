@@ -1,8 +1,16 @@
 'use client';
 
 import styled from 'styled-components';
+import PopularPost from '../../src/clientComponent/main/popularPost';
 
 export default function MainPage() {
+  /** 인기글 더미 데이터 */
+  const popularPostsData = [
+    { title: '제목 1', content: '내용 1' },
+    { title: '제목 2', content: '내용 2' },
+    { title: '제목 3', content: '내용 3' },
+  ];
+
   return (
     <Main>
       <MainLotationBanner>
@@ -29,20 +37,9 @@ export default function MainPage() {
       </PetMap>
 
       <PetPopularPosts>
-        <PopularPost>
-          <p>8. 반려동물 정보 인기글 /</p>
-          <p>카드 형식</p>
-        </PopularPost>
-
-        <PopularPost>
-          <p>8. 반려동물 정보 인기글 /</p>
-          <p>카드 형식</p>
-        </PopularPost>
-
-        <PopularPost>
-          <p>8. 반려동물 정보 인기글 /</p>
-          <p>카드 형식</p>
-        </PopularPost>
+        {popularPostsData.map((post, index) => (
+          <PopularPost key={index} title={post.title} content={post.content} />
+        ))}
       </PetPopularPosts>
     </Main>
   );
@@ -101,14 +98,5 @@ const PetPopularPosts = styled.section`
   width: 90vw;
   height: 40vh;
   margin-top: 5vh;
-  border: 1px solid;
-`;
-
-const PopularPost = styled.div`
-  display: flex;
-  width: 15vw;
-  height: 35vh;
-  align-items: center;
-  justify-content: center;
   border: 1px solid;
 `;
