@@ -2,7 +2,9 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100%; /* 화면 높이보다 적어도 컨테이너의 높이가 커야합니다. */
+  margin: 5px;
 }
 
 /** 헤더 */
@@ -12,8 +14,8 @@
   border: 3px black solid;
   position: fixed;
   align-items: center;
-  width: 98vw;
-  height: 8vh;
+  width: 98.5vw;
+  height: 7vh;
 }
 
 .nav {
@@ -58,18 +60,17 @@
 
 /** 푸터 */
 .footer {
+  height: 100px;
+  position: relative;
+  padding: 20px;
+  margin-top: 60px;
+  width: 98.5vw;
   background-color: #333;
   color: #fff;
-  text-align: center;
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 96vw;
 }
 
 /** 메인 컨텐츠 */
 .main {
   flex-grow: 1; /* 페이지 컨텐츠 영역이 화면 높이에 맞춰 조절합니다. */
   margin-top: 10vh; /* navbar의 높이 따라 조정이 필요합니다. */
-  height: calc(100vh - 80px - 100px); /* 헤더와 푸터의 높이만큼 제외합니다. */
 }
